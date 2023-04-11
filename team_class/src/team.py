@@ -18,14 +18,9 @@ class Team():
         return looking_for_player in self.players
 
 
-    #it adds or takes away 3 points if the team wins or loses respectively
+    #it adds  3 points if the team wins
     def play_game(self, win_lose):
-        if not win_lose:
-            if self.points==0:
-                return
-            else:
-                self.points -= 3
-        else:
+        if win_lose:
             self.points += 3
 
         
